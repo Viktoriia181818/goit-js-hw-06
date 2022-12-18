@@ -3,8 +3,8 @@ let nameOutput = document.querySelector('#name-output');
 
 nameInput.oninput = function () {
     if (nameInput.value === '') {
-        nameOutput.innerHTML = 'Anonymous'
+        nameOutput.textContent = 'Anonymous'
     } else {
-        nameOutput.innerHTML = nameInput.value;
+        nameOutput.textContent = nameInput.value;
     }
 }
