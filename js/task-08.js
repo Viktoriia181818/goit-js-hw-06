@@ -10,7 +10,7 @@ function sendSubmit(event) {
     } = event.currentTarget;
 
     if (email.value === '' || password.value === '') {
-        return 'Please fill in all the fields!';
+        return alert('Please fill in all the fields!');
     }
     const userDetails = { email: email.value, Password: password.value };
     
